@@ -1,6 +1,6 @@
 // App.jsx
 import React, { useState, useMemo } from 'react';
-import './app.css';
+import './App.css';
 
 const App = () => {
   const [xShadow, setXShadow] = useState(-6);
