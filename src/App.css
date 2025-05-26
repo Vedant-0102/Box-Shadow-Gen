@@ -57,6 +57,8 @@
     background: linear-gradient(to right, #ff4081, #3f51b5);
     outline: none;
     cursor: pointer;
+    touch-action: none;
+    overscroll-behavior: contain;
   }
   
   input[type='range']::-webkit-slider-thumb {
@@ -153,4 +155,34 @@
       transform: translateY(0);
     }
   }
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 100vw;
+    border-radius: 0;
+  }
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .controls-pane {
+    gap: 0.7rem;
+  }
+  .preview {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1rem;
+  }
+  textarea {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
   
